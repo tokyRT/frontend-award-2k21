@@ -290,10 +290,11 @@ main {
                     max-width: 400px;
                     margin-top: 70px;
                     cursor: pointer;
+                    overflow: hidden;
                     img {
                         width: 100%;
                         filter: grayscale(1);
-                        transition: all 0.2s ease-out;
+                        transition: all 0.2s cubic-bezier(0.79,0.14,0.15,0.86);
                     }
                     svg {
                         position: absolute;
@@ -308,6 +309,7 @@ main {
                     &:hover {
                         img {
                             filter: grayscale(0);
+                            transform: scale(1.25);
                         }
                         svg {
                             path {
