@@ -78,3 +78,28 @@ function downIntoView() {
 }
 document.querySelector('.header .scrollDown span').addEventListener('click', downIntoView);
 document.querySelector('.header .mouseShape').addEventListener('click', downIntoView);
+
+
+//aos 
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return rect.top <= (window.innerHeight || document.documentElement.clientHeight) || rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+}
+var animates = document.querySelectorAll('.animate');
+for (let i = 0; i < animates.length; i++) {
+    const el = animates[i];
+        el.addEventListener('animationend', function(){
+            // el.classList.remove(el.dataset.animation)
+        })
+}
+// window.addEventListener('scroll', function(){
+//     for (let i = 0; i < animates.length; i++) {
+//         const el = animates[i];
+//         if(isInViewport(el)){
+//             el.classList.add(el.dataset.animation);
+//         }
+//         else{
+//             el.classList.remove(el.dataset.animation)
+//         }
+//     }
+// })

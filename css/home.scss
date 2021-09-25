@@ -38,7 +38,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 99;
+        z-index: 999;
         pointer-events: none;
         &>div{
             width: 20%;
@@ -59,9 +59,7 @@ body {
             }
         }
         h1 {
-            font-family: $sixCaps;
-            font-size: 7em;
-            letter-spacing: 0.2em;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -71,8 +69,9 @@ body {
             top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 999;
+            z-index: 9999;
             color: white;
+            font-weight: normal;
             span {
                 font-size: 0.15em;
                 font-family: $abel;
@@ -154,6 +153,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                font-weight: normal;
                 // border: 1px solid red;
                 span {
                     font-size: 0.15em;
@@ -265,9 +265,11 @@ main {
                     letter-spacing: 8px;
                     margin: auto;
                     width: max-content;
+                    font-weight: normal;
                     .top {
                         font-size: 0.4em;
                     }
+                    
                 }
                 p {
                     max-width: 300px;
@@ -277,7 +279,7 @@ main {
                 }
                 .video {
                     position: relative;
-                    max-width: 300px;
+                    max-width: 400px;
                     margin-top: 70px;
                     cursor: pointer;
                     img {
@@ -476,5 +478,50 @@ main {
                 font-size: initial;
             }
         }
+    }
+}
+.inBlue{
+    color: $secondColor;
+}
+.animate{
+    // opacity: 0;
+    &.fade-up{
+        animation: fadeUp .3s ease-out;
+    }
+    &.fade-right{
+        animation: fadeRight .3s ease-out;
+    }
+    &.fade-left{
+        animation: fadeLeft .3s ease-out;
+    }
+}
+@keyframes fadeUp {
+    from{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeRight {
+    from{
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeLeft {
+    from{
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
