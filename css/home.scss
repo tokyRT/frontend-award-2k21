@@ -292,7 +292,7 @@ main {
                     cursor: pointer;
                     img {
                         width: 100%;
-                        filter: grayscale(1) brightness(0.5);
+                        filter: grayscale(1);
                         transition: all 0.2s ease-out;
                     }
                     svg {
