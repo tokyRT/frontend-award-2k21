@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Six Caps regular fa";
+    src: url("../fonts/SixCaps.ttf");
+}
+@font-face {
+    font-family: "Abel regular fa";
+    src: url("../fonts/Abel-Regular.ttf");
+}
+@font-face {
+    font-family: "Jeko extra bold";
+    src: url("../fonts/Jeko\ Extra\ Bold.ttf");
+}
+@font-face {
+    font-family: "Jeko black";
+    src: url("../fonts/Jeko\ Black.ttf");
+}
+$sixCaps: "Six Caps regular fa", Helvetica, Arial, serif, sans-serif; //for titles
+// $sixCaps: "Six Caps", Helvetica, Arial, serif, sans-serif; //for titles
+$abel: "Abel regular fa", Helvetica, Arial, serif, sans-serif; //for main text
+$jekoExtraBold: "Jeko extra bold";
+$jekoBlack: "Jeko black";
+$mainBgColor: black;
+$secondColor: #00c2c5;
