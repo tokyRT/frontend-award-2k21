@@ -269,6 +269,14 @@ main {
                     .top {
                         font-size: 0.4em;
                     }
+                    .bottom{
+                        transition: all .2s ease-out;
+                    }
+                    &:hover{
+                        .bottom{
+                            letter-spacing: 12px;
+                        }
+                    }
                     
                 }
                 p {
@@ -372,6 +380,7 @@ main {
                                 margin: 0px;
                             }
                             h2 {
+                                font-size: 2em;
                             }
                             h5 {
                                 color: $secondColor;
